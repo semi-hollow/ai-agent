@@ -1,0 +1,18 @@
+tool_timeouts:
+  ruff: 60
+  pytest: 600
+  ripgrep: 30
+
+fail_strategy:
+  on_tool_error: "closed"
+
+thresholds:
+  block_on_severity_at_or_above: "HIGH"
+
+enabled_tools:
+  ruff: true
+  pytest: true
+  ripgrep: true
+
+report:
+  max_stdout_chars: 2000
